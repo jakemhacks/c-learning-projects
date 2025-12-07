@@ -3,3 +3,4 @@ This is a series of progressively more complex projects I am making in order to 
 
 ## Project List
 1. [Hello World](/hello/hello.c)
+2. [Calculator](/calculator/calculator.c)

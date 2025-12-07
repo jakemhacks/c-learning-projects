@@ -2,7 +2,7 @@
  * Calculator
  * Author: Jake Murray
  * Date: 12\6\25
- * 
+ * Version: 1.0 
  * Description: My first C project outside of hello world
  * ******************************************************/
 
@@ -18,4 +18,24 @@ int main(void) {
     scanf("%c", &oper);
 
     printf("Enter two operands separated by a space (ex. 5 10): ");
-    scanf("%ld %ld", &arg1 &arg2); 
+    scanf("%lf %lf", &arg1, &arg2); 
+
+    switch (oper) {
+    case '+':
+        result = arg1 + arg2;
+        break;
+    case '-':
+        result = arg1 - arg2;
+        break;
+    case '*':
+        result = arg1 * arg2;
+        break;
+    case '/':
+        result = arg1 / arg2;
+        break;
+    default:
+        printf("Error, please enter a valid operand\n");
+    }
+    printf("%.2lf\n", result);
+    return 0;
+}
