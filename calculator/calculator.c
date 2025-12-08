@@ -20,6 +20,8 @@ int main(void) {
     printf("Enter two operands separated by a space (ex. 5 10): ");
     scanf("%lf %lf", &arg1, &arg2); 
 
+    // I am using a switch to return a result based on the 
+    // provided operator.
     switch (oper) {
     case '+':
         result = arg1 + arg2;
